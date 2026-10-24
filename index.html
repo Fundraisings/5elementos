@@ -12,18 +12,21 @@
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
     </style>
 </head>
-<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col">
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col">
 
     <!-- Header Navigation -->
-    <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
-        <div class="max-w-md mx-auto px-4 py-3 flex items-center justify-between">
-            <div class="flex items-center gap-2">
-                <div class="w-8 h-8 rounded-full bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 font-bold text-sm">
+    <header class="border-b border-slate-800/80 bg-slate-950/90 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-md mx-auto px-4 py-3.5 flex items-center justify-between">
+            <div class="flex items-center gap-2.5">
+                <div class="w-9 h-9 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 font-bold text-base shadow-sm">
                     ☯
                 </div>
-                <span class="font-bold tracking-tight text-white">5ELEMENTOS<span class="text-emerald-400">.LAT</span></span>
+                <div class="flex flex-col">
+                    <span class="font-bold tracking-tight text-white leading-tight">5ELEMENTOS<span class="text-emerald-400">.LAT</span></span>
+                    <span class="text-[10px] text-slate-400 tracking-wider">NUTRICIÓN CELULAR HGW</span>
+                </div>
             </div>
-            <span class="text-xs bg-emerald-950 text-emerald-400 border border-emerald-800/50 px-2 py-0.5 rounded-full font-medium">
+            <span class="text-[11px] bg-emerald-950/80 text-emerald-400 border border-emerald-800/60 px-2.5 py-1 rounded-full font-medium shadow-sm">
                 PWA RD
             </span>
         </div>
@@ -33,68 +36,88 @@
     <main class="max-w-md mx-auto px-4 py-6 flex-1 w-full space-y-6">
 
         <!-- Hero Banner -->
-        <section class="bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700/50 rounded-2xl p-5 shadow-xl relative overflow-hidden">
-            <div class="absolute -right-6 -bottom-6 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl"></div>
-            <p class="text-emerald-400 text-xs font-semibold tracking-wider uppercase mb-1">Sabiduría Ancestral & Ciencia</p>
-            <h1 class="text-xl font-bold text-white mb-2">Nutrición Celular HGW en República Dominicana</h1>
+        <section class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border border-slate-800 rounded-3xl p-6 shadow-2xl relative overflow-hidden">
+            <div class="absolute -right-8 -bottom-8 w-36 h-36 bg-emerald-500/10 rounded-full blur-3xl"></div>
+            <div class="inline-flex items-center gap-1.5 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full mb-3">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span class="text-emerald-400 text-[11px] font-semibold tracking-wider uppercase">Sabiduría Ancestral & Ciencia</span>
+            </div>
+            <h1 class="text-2xl font-bold text-white mb-2 leading-tight">Equilibrio Celular HGW en República Dominicana</h1>
             <p class="text-slate-300 text-xs leading-relaxed">
                 Armoniza tu organismo identificando las necesidades de tu cuerpo mediante la filosofía de los 5 Elementos.
             </p>
         </section>
 
         <!-- Product Grid -->
-        <section class="space-y-4">
-            <h2 class="text-sm font-semibold text-slate-400 uppercase tracking-wider">Catálogo Inicial</h2>
+        <section class="space-y-5">
+            <div class="flex items-center justify-between px-1">
+                <h2 class="text-xs font-bold text-slate-400 uppercase tracking-widest">Catálogo Oficial</h2>
+                <span class="text-xs text-slate-500">2 Productos Activos</span>
+            </div>
 
             <!-- Card 1: Cordyceps Coffee -->
-            <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-4 shadow-lg hover:border-slate-600 transition">
+            <div class="bg-slate-900/90 border border-slate-800 rounded-3xl p-5 shadow-xl hover:border-slate-700 transition overflow-hidden">
+                <!-- Imagen del Producto -->
+                <div class="w-full h-52 bg-slate-950 rounded-2xl overflow-hidden mb-4 border border-slate-800/80 flex items-center justify-center p-2">
+                    <img src="images/cordyceps.jpeg" alt="Cordyceps Coffee HGW" class="w-full h-full object-contain hover:scale-105 transition duration-300">
+                </div>
+
                 <div class="flex justify-between items-start mb-2">
-                    <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-slate-700 text-slate-200 border border-slate-600">
+                    <span class="text-[11px] font-semibold px-3 py-1 rounded-full bg-slate-800 text-slate-200 border border-slate-700">
                         ⚪ ELEMENTO METAL
                     </span>
-                    <span class="text-xs font-medium text-emerald-400">Pulmón & Qi</span>
+                    <span class="text-[11px] font-medium text-emerald-400 bg-emerald-950/50 px-2.5 py-0.5 rounded-md border border-emerald-900/50">
+                        Pulmón & Qi
+                    </span>
                 </div>
                 
-                <h3 class="text-lg font-bold text-white mt-1">Cordyceps Coffee HGW</h3>
-                <p class="text-xs text-slate-400 mt-1 mb-3">
-                    Café instantáneo enriquecido con Cordyceps Sinensis. Diseñado para reforzar la oxigenación celular, aumentar la energía y la respuesta inmunológica.
+                <h3 class="text-lg font-bold text-white mt-2">Cordyceps Coffee HGW</h3>
+                <p class="text-xs text-slate-400 mt-1.5 mb-4 leading-relaxed">
+                    Café instantáneo enriquecido con Cordyceps Sinensis. Diseñado para reforzar la oxigenación celular, aumentar la energía y fortalecer la respuesta inmunológica.
                 </p>
 
-                <div class="flex items-center justify-between border-t border-slate-700/60 pt-3">
+                <div class="flex items-center justify-between border-t border-slate-800/80 pt-4">
                     <div>
-                        <span class="text-xs text-slate-400 block">Precio Público</span>
-                        <span class="text-lg font-bold text-emerald-400">RD$ 1,495</span>
+                        <span class="text-[10px] text-slate-400 uppercase font-medium tracking-wider block">Precio Público</span>
+                        <span class="text-xl font-bold text-emerald-400">RD$ 1,495</span>
                     </div>
                     <a href="https://wa.me/18293417311?text=Hola!%20Quiero%20solicitar%20el%20Cordyceps%20Coffee%20(Elemento%20Metal)%20de%20RD$%201,495" 
                        target="_blank" 
-                       class="bg-emerald-600 hover:bg-emerald-500 text-white font-medium text-xs px-4 py-2.5 rounded-xl transition flex items-center gap-1.5 shadow-lg shadow-emerald-950/50">
+                       class="bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white font-medium text-xs px-4 py-3 rounded-2xl transition flex items-center gap-2 shadow-lg shadow-emerald-950/60">
                         <i data-lucide="shopping-cart" class="w-4 h-4"></i> Pedir por WhatsApp
                     </a>
                 </div>
             </div>
 
             <!-- Card 2: Ashwagandha Coffee Cream -->
-            <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-4 shadow-lg hover:border-slate-600 transition">
+            <div class="bg-slate-900/90 border border-slate-800 rounded-3xl p-5 shadow-xl hover:border-slate-700 transition overflow-hidden">
+                <!-- Imagen del Producto -->
+                <div class="w-full h-52 bg-slate-950 rounded-2xl overflow-hidden mb-4 border border-slate-800/80 flex items-center justify-center p-2">
+                    <img src="images/ashwagandha.png" alt="Ashwagandha Coffee Cream HGW" class="w-full h-full object-contain hover:scale-105 transition duration-300">
+                </div>
+
                 <div class="flex justify-between items-start mb-2">
-                    <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-blue-950 text-blue-300 border border-blue-800/50">
+                    <span class="text-[11px] font-semibold px-3 py-1 rounded-full bg-blue-950/80 text-blue-300 border border-blue-800/50">
                         💧 ELEMENTO AGUA / TIERRA
                     </span>
-                    <span class="text-xs font-medium text-blue-400">Riñón & Adaptógeno</span>
+                    <span class="text-[11px] font-medium text-blue-400 bg-blue-950/50 px-2.5 py-0.5 rounded-md border border-blue-900/50">
+                        Riñón & Adaptógeno
+                    </span>
                 </div>
                 
-                <h3 class="text-lg font-bold text-white mt-1">Ashwagandha Coffee Cream HGW</h3>
-                <p class="text-xs text-slate-400 mt-1 mb-3">
-                    Fórmula funcional con Ashwagandha, Du Zhong y Extracto de Ostra. Ayuda a mitigar el estrés, fortalece la estructura ósea y equilibra el organismo.
+                <h3 class="text-lg font-bold text-white mt-2">Ashwagandha Coffee Cream HGW</h3>
+                <p class="text-xs text-slate-400 mt-1.5 mb-4 leading-relaxed">
+                    Fórmula funcional con Ashwagandha, Du Zhong y Extracto de Ostra. Ayuda a mitigar el estrés, fortalece la estructura ósea y equilibra el sistema hormonal.
                 </p>
 
-                <div class="flex items-center justify-between border-t border-slate-700/60 pt-3">
+                <div class="flex items-center justify-between border-t border-slate-800/80 pt-4">
                     <div>
-                        <span class="text-xs text-slate-400 block">Precio Público</span>
-                        <span class="text-lg font-bold text-emerald-400">RD$ 1,495</span>
+                        <span class="text-[10px] text-slate-400 uppercase font-medium tracking-wider block">Precio Público</span>
+                        <span class="text-xl font-bold text-emerald-400">RD$ 1,495</span>
                     </div>
                     <a href="https://wa.me/18293417311?text=Hola!%20Quiero%20solicitar%20el%20Ashwagandha%20Coffee%20Cream%20(Elemento%20Agua)%20de%20RD$%201,495" 
                        target="_blank" 
-                       class="bg-emerald-600 hover:bg-emerald-500 text-white font-medium text-xs px-4 py-2.5 rounded-xl transition flex items-center gap-1.5 shadow-lg shadow-emerald-950/50">
+                       class="bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white font-medium text-xs px-4 py-3 rounded-2xl transition flex items-center gap-2 shadow-lg shadow-emerald-950/60">
                         <i data-lucide="shopping-cart" class="w-4 h-4"></i> Pedir por WhatsApp
                     </a>
                 </div>
@@ -104,8 +127,9 @@
     </main>
 
     <!-- Footer -->
-    <footer class="border-t border-slate-800 py-4 text-center text-xs text-slate-500">
-        <p>© 2026 5Elementos.lat • Distribución Oficial HGW RD</p>
+    <footer class="border-t border-slate-900 py-6 text-center text-xs text-slate-400 space-y-1">
+        <p class="font-medium text-slate-300">5Elementos.lat</p>
+        <p>© 2026 Distribución Oficial HGW • República Dominicana</p>
     </footer>
 
     <script>
